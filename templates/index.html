@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dojo Survey </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" />
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1 class="titulo">
+                Dojo Survey
+            </h1>
+            <form class="form" action="/encuesta" method="POST">
+                <div class="espacioform">
+                    <label class="letraform" for="nombre">
+                        Name:
+                    </label> 
+                    <input class="casillaform" type="text" id="nombre" name="nombre" placeholder="Your name..."/>
+                </div>
+                <div class="espacioform">
+                    <label class="letraform" for="locacion">
+                        Dojo Location:
+                    </label> 
+                    <select class="casillaform" id="locacion" name="locacion" >
+                        <option value="-- Select A Location --">
+                            -- Select A Location --
+                        </option>
+                        <option value="Chicago">
+                            Chicago
+                        </option>
+                        <option value="Seattle">
+                            Seattle
+                        </option>
+                        <option value="Online">
+                            Online
+                        </option>
+                        <option value="Burbank">
+                            Burbank
+                        </option>
+                        <option value="Bellevue">
+                            Bellevue
+                        </option>
+                    </select>
+                </div>
+                <div class="espacioform">
+                    <label class="letraform" for="language">
+                        Favorite Language:
+                    </label> 
+                    <select class="casillaform" id="language" name="language" >
+                        <option value="-- Select A Language --">
+                            -- Select A Language --
+                        </option>
+                        <option value="HTML">
+                            HTML
+                        </option>
+                        <option value="CSS">
+                            CSS
+                        </option>
+                        <option value="JavaScript">
+                            JavaScript
+                        </option>
+                        <option value="Python">
+                            Python
+                        </option>
+                        <option value="C#">
+                            C#
+                        </option>
+                    </select>
+                </div>
+                <div class="espaciotext">
+                    <label class="letraform" for="comentario">
+                        Comments:
+                    </label> 
+                    <textarea class="textarea" id="comentario" name="comentario"></textarea>
+                </div>
+                <button class="submit" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

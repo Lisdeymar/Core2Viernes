@@ -1,0 +1,114 @@
+body{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 350px;
+    height: 550px;
+    padding: 40px;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    color: rgb(255, 217, 0);
+    margin: 0px 0px 15px 0px;
+}
+
+.form{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.espacioform{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.letraform{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.casillaform{
+    height: 35px;
+    color: grey;
+    border-radius: 4px;
+    border: solid 1px;
+}
+.espaciotext{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.textarea{
+    height: 200px;
+    color: grey;
+    border-radius: 4px;
+    border: solid 1px;
+}
+
+.casillaform:hover{
+    border: solid 1px rgb(0, 162, 255);
+}
+
+.textarea{
+    border: solid 1px rgb(0, 162, 255);
+}
+
+.submit{
+    width: 70px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: rgb(255, 217, 0);
+    color: grey;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.submit:hover{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    cursor: pointer;
+}
+
+/*Results Html*/
+
+.caja{
+    width: 350px;
+    padding: 30px 30px 5px 30px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 4px;
+}
+
+.nombre{
+    color: rgb(0, 162, 255);
+    margin: 0px;
+}
+
+.info{
+    color: white;
+    font-weight: bold;
+}
+.cajahome{
+    width: 350px;
+    height: 40px;
+    border-top: solid 2px rgba(17, 17, 17, 0.767);
+}
+.home{
+    background-color: rgb(29, 29, 29);
+    color: rgb(0, 162, 255);
+    padding: 15px 0px 0px 0px;
+    border: 0px;
+}
+
+.home:hover{
+    text-decoration: underline rgb(0, 162, 255);
+    cursor: pointer;
+}

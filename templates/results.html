@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Results </title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" />
+    </head>
+    <body>
+        <div class="caja">
+            <div class="resultado">
+                {% for usuario in usuarios: %}
+                    <h1 class="nombre">
+                        {{ usuario['nombre'] }} 
+                    </h1>
+                    <p class="info">
+                        Dojo Location: {{ usuario['locacion'] }} 
+                    </p>
+                    <p class="info">
+                        Favorite Language: {{ usuario['language'] }}
+                    </p>
+                    <p class="info">
+                        Comments: {{ usuario['comentario'] }}
+                    </p>
+                {% endfor %}
+            </div>
+            <form class="cajahome" action="/logout" method="GET">
+                <button class="home" type="submit">
+                    Home
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
